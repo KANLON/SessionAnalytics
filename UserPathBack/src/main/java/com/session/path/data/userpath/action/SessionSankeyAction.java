@@ -24,7 +24,7 @@ import com.session.path.data.userpath.repository.SessionSingleRepository;
 import com.session.path.data.userpath.repository.UserLogUploadStatusRepository;
 import com.session.path.data.userpath.util.BizCode;
 import com.session.path.data.userpath.util.CommonUtil;
-import com.session.path.data.userpath.util.CsvExportUtil;
+//import com.session.path.data.userpath.util.CsvExportUtil;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -1539,8 +1539,8 @@ public class SessionSankeyAction extends BaseAction {
 
 
             OutputStream os = response.getOutputStream();
-            CsvExportUtil.responseSetProperties(fName, response);
-            CsvExportUtil.doExport(exportData, titles, keys, os);
+//            CsvExportUtil.responseSetProperties(fName, response);
+//            CsvExportUtil.doExport(exportData, titles, keys, os);
             os.close();
             LOGGER.info("下载csv成功");
             baseRsp.setMessage("下载csv成功");
@@ -1595,8 +1595,8 @@ public class SessionSankeyAction extends BaseAction {
 
 
             OutputStream os = response.getOutputStream();
-            CsvExportUtil.responseSetProperties(fName, response);
-            CsvExportUtil.doExport(exportData, titles, keys, os);
+//            CsvExportUtil.responseSetProperties(fName, response);
+//            CsvExportUtil.doExport(exportData, titles, keys, os);
             os.close();
             LOGGER.info("下载csv成功");
             baseRsp.setMessage("下载csv成功");

@@ -29,10 +29,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2023/03/04 17:10
  * @Version 1.0
  **/
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.session.path.data.userpath"})
 @RestController
 @EntityScan("com.session.path.data.userpath.entity")
-@ComponentScan(value = {"com.session.path.data.userpath"})
 @EnableScheduling
 public class UserPathApplication {
 
